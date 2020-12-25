@@ -15,8 +15,8 @@ class ProductController extends Controller
     public function index()
     {
         //
-        $products = Prdocut::latest()->paginate(5);
-        return view('prodcuts.index',compact('products'))->with('i',(request()->input('page', 1) -1) *5);
+        $products = Product::latest()->paginate(5);
+        return view('products.index',compact('products'))->with('i',(request()->input('page', 1) -1) *5);
     }
 
     /**
@@ -88,7 +88,7 @@ class ProductController extends Controller
             'detail'=> 'required',
         ]);
 
-        $product::update($request->all());
+        $product->update($request->all());
         return redirect()->route('products.index')
                         ->with('success','Product updated successfully');
     }
