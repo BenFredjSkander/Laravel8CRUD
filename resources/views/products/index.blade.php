@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2>Laravel 8 CRUD Example from scratch - ItSolutionStuff.com</h2>
+            <h2>Mon premier projet LARAVEL8 avec CRUD-Skander Ben Fredj</h2>
         </div>
 
         <div class="pull-right">
